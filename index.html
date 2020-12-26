@@ -4,7 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- Trading View API-->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <!-- StockTwits API-->
+    <script type="text/javascript" src="https://api.stocktwits.com/addon/widget/2/widget-loader.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- My files-->
@@ -48,9 +51,8 @@
         </form>
       </div>
     </nav>
-    <!--<iframe allowtranparency="true" frameborder="0" style="border: 0px; width: 300px; height: 300px;" scrolling="no" src="//api.stocktwits.com/widgets/stream?width=300&amp;height=300&amp;domain=127.0.0.1&amp;scrollbars=true&amp;streaming=true&amp;limit=15&amp;title=fb%20Ideas&amp;symbol=aapl&amp;border_color=cecece&amp;box_color=f5f5f5&amp;header_text_color=000000&amp;divider_color=cecece&amp;stream_color=ffffff&amp;divider_type=solid&amp;link_color=4871a8&amp;link_hover_color=4871a8&amp;text_color=000000&amp;time_color=999999"></iframe>
-    -->
-      <iframe allowtranparency="true" frameborder="0" style="border: 0px; width: 0px; height: 0px;" scrolling="no" id="stocktwits_widget"></iframe>
+    <div id="stocktwits-widget-news"></div><a href='https://stocktwits.com' style='font-size: 0px;'>Stocktwits</a>
+    <div id="tradingview-widget-container"></div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
